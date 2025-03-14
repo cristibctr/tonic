@@ -273,7 +273,7 @@ default = ["full"]
 
 [dependencies]
 # Common dependencies
-tokio = { version = "1.0", features = ["rt-multi-thread", "macros"] }
+tokio = { version = "1.0", features = ["rt-multi-thread", "macros", "fs"] }
 prost = "0.13"
 tonic = { path = "../tonic" }
 # Optional dependencies

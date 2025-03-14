@@ -17,12 +17,12 @@ rust-version = { workspace = true }
 
 [dependencies]
 prost = "0.13"
-tokio = {version = "1.0", features = ["sync"]}
+tokio = {version = "1.0", features = ["sync", "fs"]}
 tokio-stream = {version = "0.1", default-features = false, features = ["sync"]}
 tonic = { version = "0.13.0", path = "../tonic", default-features = false, features = ["codegen", "prost"] }
 
 [dev-dependencies]
-tokio = {version = "1.0", features = ["rt-multi-thread", "macros"]}
+tokio = {version = "1.0", features = ["rt-multi-thread", "macros", "fs"]}
 prost-types = "0.13.0"
 
 [lints]
