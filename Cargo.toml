@@ -35,7 +35,7 @@ resolver = "2"
 rust-version = "1.75"
 
 [profile.dev]
-opt-level = "s"
+opt-level = 2
 
 [workspace.lints.rust]
 missing_debug_implementations = "warn"
